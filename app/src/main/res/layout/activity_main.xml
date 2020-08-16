@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBFBFB"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,13 +21,16 @@
             android:id="@+id/language_name_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Add language"
+            android:textColor="#000000"
+            android:textColorHint="#050505" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/language_button"
-            android:onClick="addLanguage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="addLanguage"
             android:text="ADD" />
 
     </LinearLayout>
@@ -34,7 +39,7 @@
         android:id="@+id/language_recycleview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
